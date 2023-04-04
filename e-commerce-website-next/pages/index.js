@@ -16,9 +16,16 @@ export default function Home() {
       </Head>
       <>
       <NavBar/>
-      <div className='flex place-content-center
-      '>
-      <ApparelCard name="Jumper" description="Rock this cozy, vintage-inspired jumper with your favorite band's iconic logo and memorable tour dates." price="100" src="merch-1.png"/>
+      <div className='flex flex-col justify-center items-center'>
+        <div className='pb-4'>      
+        <ApparelCard name="Jumper" description="Rock this cozy, vintage-inspired jumper with your favorite band's iconic logo and memorable tour dates." price="100" src="merch-1.png"/>
+        </div>
+        <div className='pb-4'>      
+        <ApparelCard name="Jumper" description="Rock this cozy, vintage-inspired jumper with your favorite band's iconic logo and memorable tour dates." price="100" src="merch-2.png"/>
+        </div>
+        <div className='pb-4'>      
+        <ApparelCard name="Jumper" description="Rock this cozy, vintage-inspired jumper with your favorite band's iconic logo and memorable tour dates." price="100" src="merch-1.png"/>
+        </div>
       </div>
      
       </>
