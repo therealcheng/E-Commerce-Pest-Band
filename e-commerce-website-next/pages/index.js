@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import NavBar from '@/components/NavBar'
+import ApparelCard from '@/components/ApparelCard'
 
 
 export default function Home() {
@@ -15,6 +16,15 @@ export default function Home() {
       </Head>
       <>
       <NavBar/>
+      <div className='flex place-content-center
+      '>
+      <ApparelCard
+  name="Dress"
+  price="100"
+  src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/en/images/products/200x200/134201_1.jpg"
+/>
+      </div>
+     
       </>
     </>
   )
