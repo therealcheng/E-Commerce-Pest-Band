@@ -18,11 +18,7 @@ export default function Home() {
       <NavBar/>
       <div className='flex place-content-center
       '>
-      <ApparelCard
-  name="Dress"
-  price="100"
-  src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/en/images/products/200x200/134201_1.jpg"
-/>
+      <ApparelCard name="Jumper" description="Rock this cozy, vintage-inspired jumper with your favorite band's iconic logo and memorable tour dates." price="100" src="merch-1.png"/>
       </div>
      
       </>

@@ -1,18 +1,19 @@
 import React from 'react'
 
-const ApparelCard = () => {
+const ApparelCard = ({name,description, price, src}) => {
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src="merch-1.png" alt="Shoes" /></figure>
+  <figure><img src={src} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title">
-      Shoes!
-      <div className="badge badge-secondary">NEW</div>
+      {name}
+      <div className="badge badge-primary">NEW</div>
+      <div className="badge badge-neutral">£{price}</div>
     </h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <p>{description}</p>
     <div className="card-actions justify-end">
       <div className="badge badge-outline">Fashion</div>
-      <div className="badge badge-outline">Products</div>
+      <div className="badge badge-outline">Jumper</div>
     </div>
   </div>
 </div>
