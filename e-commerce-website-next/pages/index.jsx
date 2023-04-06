@@ -4,9 +4,20 @@ import styles from "@/styles/Home.module.css";
 import NavBar from "@/components/NavBar";
 import ApparelCard from "@/components/ApparelCard";
 import Footer from "@/components/Footer";
-import data from "@/lib/data";
+// import data from "@/lib/data";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await axios.get("http://localhost:5000/api/products"); // ajax req
+      setProducts(res.data);
+    };
+    fetchData();
+  }, []);
+
   return (
     <>
       <Head>
@@ -18,7 +29,7 @@ export default function Home() {
       <>
         <NavBar />
         <div className="flex flex-col md:flex-row md:p-24 justify-center items-center">
-          {data.products.map((product) => (
+          {products.map((product) => (
             <div key={product.slug} className="pb-4 md:pr-4">
               <ApparelCard
                 name={product.name}
