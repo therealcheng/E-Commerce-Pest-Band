@@ -1,5 +1,5 @@
 # Simple Online Clothing Store
-
+[A Work in Progress](https://e-commerce-pest-band.vercel.app/)
 ## User Story 1: Browsing the catalog
 
 As a customer,  
