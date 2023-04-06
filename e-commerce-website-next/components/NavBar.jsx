@@ -2,8 +2,12 @@
 // It will have a dropdown menu that will display a cart, and a dropdown menu that will display the user's avatar.
 
 import React from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const NavBar = () => {
+  const router = useRouter();
+
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
@@ -12,9 +16,9 @@ const NavBar = () => {
           <div className="swap-on">😈</div>
           <div className="swap-off">😇</div>
         </label>
-        <a className="btn btn-ghost normal-case text-xl" href="/">
+        <Link className="btn btn-ghost normal-case text-xl" href="/">
           PEST MERCH
-        </a>
+        </Link>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">
