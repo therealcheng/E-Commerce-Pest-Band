@@ -7,6 +7,11 @@ const NavBar = () => {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
+        <label className="swap swap-flip text-xl pl-4">
+          <input type="checkbox" />
+          <div className="swap-on">😈</div>
+          <div className="swap-off">😇</div>
+        </label>
         <a className="btn btn-ghost normal-case text-xl">PEST MERCH</a>
       </div>
       <div className="flex-none">
