@@ -6,7 +6,10 @@ const Footer = () => {
   return (
     <footer className="footer footer-center p-10 text-gray-500">
       <div>
-        <Image src={logo} width="100" height="100" />
+        <a href="https://pest-epk-website2-0.vercel.app">
+          <Image src={logo} width="100" height="100" />
+        </a>
+
         <p className="font-bold">
           PEST. <br />
           Punk rock duo since 2021
