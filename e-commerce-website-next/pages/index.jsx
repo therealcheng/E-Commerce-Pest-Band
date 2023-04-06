@@ -20,7 +20,7 @@ export default function Home() {
           {data.products.map((product) => (
             <div key={product.slug} className="pb-4 md:pr-4">
               <ApparelCard
-                name={product.data}
+                name={product.name}
                 description={product.description}
                 price={product.price}
                 src={product.image}

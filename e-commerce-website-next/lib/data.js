@@ -2,7 +2,7 @@
 const data = {
     products: [
         {
-            name: 'Jumper',
+            name: 'PEST JUMPER',
             description: 'Welcome to the rebellion.',
             price: 40,
             slug: 'pest-jumper-1',
@@ -12,7 +12,7 @@ const data = {
             delivery: '2-3 days delivery from £3.99',
         },
         {
-            name: 'T-shirt',
+            name: 'PEST TEE',
             description: 'Welcome to the rebellion.',
             price: 20,
             slug: 'pest-shirt-1',
@@ -22,7 +22,7 @@ const data = {
             delivery: '2-3 days delivery from £3.99',
         },
         {
-            name: 'Jumper',
+            name: 'PEST JUMPER',
             description: 'Welcome to the rebellion.',
             price: 40,
             slug: 'pest-jumper-2',
