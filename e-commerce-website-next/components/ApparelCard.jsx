@@ -1,9 +1,25 @@
 import React from "react";
 import Image from "next/image";
 
-const ApparelCard = ({ name, description, price, src }) => {
+const ApparelCard = ({
+  name,
+  description,
+  price,
+  src,
+  category,
+  link,
+  slug,
+}) => {
+  const handleClick = () => {
+    window.open(`/product/${slug}`, "_self");
+  };
+
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div
+      style={{ cursor: "pointer" }} // Optional: Change cursor to pointer when hovering over the div
+      onClick={handleClick}
+      className="card w-96 bg-base-100 shadow-xl"
+    >
       <figure>
         <Image src={src} alt="Shoes" width={350} height={350} />
       </figure>
@@ -15,8 +31,8 @@ const ApparelCard = ({ name, description, price, src }) => {
         </h2>
         <p>{description}</p>
         <div className="card-actions justify-end">
-          <div className="badge badge-outline">Fashion</div>
-          <div className="badge badge-outline">Jumper</div>
+          {/* <div className="badge badge-outline">Fashion</div> */}
+          <div className="badge badge-outline">{category}</div>
         </div>
       </div>
     </div>

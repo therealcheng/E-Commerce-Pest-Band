@@ -19,8 +19,8 @@ export default function Home() {
       <div className='flex flex-col md:flex-row md:p-24 justify-center items-center'>
         {
           data.products.map(product => (
-            <div className='pb-4 md:pr-4'>
-              <ApparelCard name={product.data} description={product.description} price={product.price} src={product.image}/>
+            <div key={product.slug} className='pb-4 md:pr-4'>
+              <ApparelCard name={product.data} description={product.description} price={product.price} src={product.image} category={product.category} slug={product.slug}/>
             </div>
           ))
         }
