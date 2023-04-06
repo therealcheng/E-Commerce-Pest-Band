@@ -6,7 +6,7 @@ const data = {
             description: 'Welcome to the rebellion.',
             price: 40,
             slug: 'pest-jumper',
-            image: '../public/merch-1.png',
+            image: '/images/m-1.png',
             stock: 10,
             category: 'Jumper',
         },
@@ -15,7 +15,7 @@ const data = {
             description: 'Welcome to the rebellion.',
             price: 20,
             slug: 'pest-jumper',
-            image: '../public/merch-2.png',
+            image: '/images/m-2.png',
             stock: 10,
             category: 'T-shirt',
         },
@@ -24,9 +24,10 @@ const data = {
             description: 'Welcome to the rebellion.',
             price: 40,
             slug: 'pest-jumper',
-            image: '../public/flip-1.png',
+            image: '/images/f-1.png',
             stock: 10,
             category: 'Jumper',
         }
     ]
 }
+export default data;

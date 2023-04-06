@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import NavBar from '@/components/NavBar'
 import ApparelCard from '@/components/ApparelCard'
-
+import data from '@/lib/data'
 
 export default function Home() {
   return (
@@ -17,15 +17,13 @@ export default function Home() {
       <>
       <NavBar/>
       <div className='flex flex-col md:flex-row md:p-24 justify-center items-center'>
-        <div className='pb-4 md:pr-4'>      
-        <ApparelCard name="Jumper" description="Welcome to the rebellion." price="100" src="merch-1.png"/>
-        </div>
-        <div className='pb-4 md:pr-4'>      
-        <ApparelCard name="T-shirt" description="Welcome to the rebellion." price="100" src="merch-2.png"/>
-        </div>
-        <div className='pb-4 md:pr-4'>      
-        <ApparelCard name="Jumper 2" description="Welcome to the rebellion." price="100" src="merch-1.png"/>
-        </div>
+        {
+          data.products.map(product => (
+            <div className='pb-4 md:pr-4'>
+              <ApparelCard name={product.data} description={product.description} price={product.price} src={product.image}/>
+            </div>
+          ))
+        }
       </div>
      
       </>
