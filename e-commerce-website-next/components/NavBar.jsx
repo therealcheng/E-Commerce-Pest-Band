@@ -13,8 +13,8 @@ const NavBar = () => {
       <div className="flex-1">
         <label className="swap swap-flip text-xl pl-4">
           <input type="checkbox" />
-          <div className="swap-on">😈</div>
-          <div className="swap-off">😇</div>
+          <div className="swap-on">😇</div>
+          <div className="swap-off">😈</div>
         </label>
         <Link className="btn btn-ghost normal-case text-xl" href="/">
           PEST MERCH
