@@ -1,3 +1,4 @@
+// products data
 const data = {
     products: [
         {
