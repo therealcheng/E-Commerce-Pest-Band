@@ -31,6 +31,17 @@ const ProductPage = ({ product }) => {
       <h1 className="text-xl pl-8">{product.name}</h1>
       <h1 className="text-lg pl-8">£{product.price}</h1>
       <h1 className="text-lg pl-8">£{product.delivery}</h1>
+      <ul className="menu menu-horizontal bg-base-300 rounded-box">
+        <li>
+          <a>Small</a>
+        </li>
+        <li>
+          <a>Medium</a>
+        </li>
+        <li>
+          <a>Large</a>
+        </li>
+      </ul>
     </>
   );
 };

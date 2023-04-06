@@ -12,7 +12,9 @@ const NavBar = () => {
           <div className="swap-on">😈</div>
           <div className="swap-off">😇</div>
         </label>
-        <a className="btn btn-ghost normal-case text-xl">PEST MERCH</a>
+        <a className="btn btn-ghost normal-case text-xl" href="/">
+          PEST MERCH
+        </a>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">
