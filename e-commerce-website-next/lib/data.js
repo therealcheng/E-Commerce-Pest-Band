@@ -2,7 +2,7 @@
 const data = {
     products: [
         {
-            name: 'PEST JUMPER',
+            name: 'PEST JUMPER NOT FROM REAL JSON',
             description: 'Welcome to the rebellion.',
             price: 40,
             slug: 'pest-jumper-1',
