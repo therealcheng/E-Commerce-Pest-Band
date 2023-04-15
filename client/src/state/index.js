@@ -19,7 +19,7 @@ export const cartSlice = createSlice({
     }, // function to add item to cart
 
     removeFromCart: (state, action) => {
-      state.cart = state.cart.filter((item) => item.id !== action.payload.id);
+      state.cart = state.cart.filter((item) => item.id !== action.payload.id); // function to remove item from cart
     },
 
     increaseCount: (state, action) => {
@@ -28,7 +28,7 @@ export const cartSlice = createSlice({
           item.count++;
         }
         return item;
-      });
+      }); // function to increase count
     },
 
     decreaseCount: (state, action) => {
@@ -37,12 +37,12 @@ export const cartSlice = createSlice({
           item.count--;
         }
         return item;
-      });
+      }); // function to decrease count
     },
 
     setIsCartOpen: (state) => {
       state.isCartOpen = !state.isCartOpen;
-    },
+    }, // function to toggle cart open
   },
 });
 
