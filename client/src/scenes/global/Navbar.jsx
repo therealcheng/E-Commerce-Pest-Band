@@ -34,11 +34,12 @@ const Navbar = () => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <Box>
+        <Box
           onClick={() => navigate("/")}
           sx={{ "&:hover": { cursor: "pointer" } }}
-          color={shades.secondary[500]}
-          PEST
+          color={shades.primary[500]}
+        >
+          PEST BAND
         </Box>
         <Box
           display="flex"
