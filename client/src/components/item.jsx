@@ -36,8 +36,8 @@ const Item = ({ item, width }) => {
       >
         <img
           alt={item.name}
-          width="500px"
-          height="750px"
+          width="300px"
+          height="400px"
           src={`http://localhost:1337${url}`}
           onClick={() => navigate(`/item/${item.id}`)}
           style={{ cursor: "pointer" }}
@@ -51,7 +51,6 @@ const Item = ({ item, width }) => {
           padding="0 5%"
         >
           <Box display="flex" justifyContent="space-between">
-            {/* Amount */}
             <Box
               display="flex"
               alignItems="center"
@@ -62,11 +61,10 @@ const Item = ({ item, width }) => {
                 <RemoveIcon />
               </IconButton>
               <Typography color={shades.primary[300]}>{count}</Typography>
-              <IconButton onClick={() => setCount(Math.max(count + 1))}>
+              <IconButton onClick={() => setCount(count + 1)}>
                 <AddIcon />
               </IconButton>
             </Box>
-            {/* Button */}
             <Button
               onClick={() => {
                 dispatch(addToCart({ item: { ...item, count } }));
