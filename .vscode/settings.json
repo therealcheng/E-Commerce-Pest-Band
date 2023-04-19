@@ -7,5 +7,6 @@
     "reduxjs",
     "svgr",
     "tailwindcss"
-  ]
+  ],
+  "git.ignoreLimitWarning": true
 }
