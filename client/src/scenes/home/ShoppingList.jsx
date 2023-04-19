@@ -27,7 +27,38 @@ const ShoppingList = () => {
     getItems();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  return <div>ShoppingList</div>;
+  const topRatedItems = items.filter(
+    (item) => item.attributes.category === "topRated"
+  );
+  const newArrivalsItems = items.filter(
+    (item) => item.attributes.category === "newArrivals"
+  );
+  const bestSellersItems = items.filter(
+    (item) => item.attributes.category === "bestSellers"
+  );
+
+  return (
+    <Box width="80%" margin="80px auto">
+      <Typography variant="h3" textAlign="center">
+        Our Featured <b>Products</b>
+      </Typography>
+      <Tabs
+        textColor="primary"
+        indicatorColor="primary"
+        value={value}
+        onChange={handleChange}
+        centered
+        TabIndicatorProps={{ sx: { display: isNonMobile ? "block" : "none" } }}
+        sx={{ m: "25px", "&.MuiTabs=flexContainer": { flexWrap: "wrap" } }}
+      >
+        <Tab label="All" value="all" />
+        <Tab label="NEW ARRIVALS" value="newArrivals" />
+        <Tab label="BEST SELLERS" value="bestSellers" />
+        <Tab label="TOP RATED" value="topRated" />
+      </Tabs>
+      <Box></Box>
+    </Box>
+  );
 };
 
 export default ShoppingList;
