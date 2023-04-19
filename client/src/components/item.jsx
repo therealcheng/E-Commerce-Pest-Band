@@ -36,14 +36,14 @@ const Item = ({ item, width }) => {
       >
         <img
           alt={item.name}
-          width="600px"
-          height="600px"
+          width="500px"
+          height="750px"
           src={`http://localhost:1337${url}`}
           onClick={() => navigate(`/item/${item.id}`)}
           style={{ cursor: "pointer" }}
         />
         <Box
-          display={isHovered ? "blocked" : "none"}
+          display={isHovered ? "block" : "none"}
           position="absolute"
           bottom="10%"
           left="0"

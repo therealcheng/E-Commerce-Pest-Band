@@ -49,14 +49,38 @@ const ShoppingList = () => {
         onChange={handleChange}
         centered
         TabIndicatorProps={{ sx: { display: isNonMobile ? "block" : "none" } }}
-        sx={{ m: "25px", "&.MuiTabs=flexContainer": { flexWrap: "wrap" } }}
+        sx={{ m: "25px", "& .MuiTabs=flexContainer": { flexWrap: "wrap" } }}
       >
         <Tab label="All" value="all" />
         <Tab label="NEW ARRIVALS" value="newArrivals" />
         <Tab label="BEST SELLERS" value="bestSellers" />
         <Tab label="TOP RATED" value="topRated" />
       </Tabs>
-      <Box></Box>
+      <Box
+        margin="0 auto"
+        display="grid"
+        gridTemplateColumns="repeat(auto-fill, 300px)"
+        justifyContent="space-around"
+        rowGap="20px"
+        columnGap="1.33%"
+      >
+        {value === "all" &&
+          items.map((item) => (
+            <Item item={item} key={`${item.name}-${item.id}`} />
+          ))}
+        {value === "newArrivals" &&
+          newArrivalsItems.map((item) => (
+            <Item item={item} key={`${item.name}-${item.id}`} />
+          ))}
+        {value === "bestSellers" &&
+          bestSellersItems.map((item) => (
+            <Item item={item} key={`${item.name}-${item.id}`} />
+          ))}
+        {value === "topRated" &&
+          topRatedItems.map((item) => (
+            <Item item={item} key={`${item.name}-${item.id}`} />
+          ))}
+      </Box>
     </Box>
   );
 };
