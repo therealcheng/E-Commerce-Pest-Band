@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Typography, IconButton, useMediaQuery } from "@mui/material";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // loader for carousel
@@ -91,7 +90,9 @@ const MainCarousel = () => {
               fontWeight="bold"
               color={shades.secondary[300]}
               sx={{ textDecoration: "underline" }}
-            ></Typography>
+            >
+              Discover more
+            </Typography>
           </Box>
         </Box>
       ))}
