@@ -29,11 +29,7 @@ const Footer = () => {
           </Typography>
           <div>
             PEST, a two-person punk rock band, was formed in Hertfordshire, a
-            county in southern England, in early 2020. The band's name is an
-            acronym for "Powerful Electric Shock Therapy," a name that reflects
-            their energetic and rebellious approach to music. The band consists
-            of two talented musicians, Harvey Denman and Cameron Taylor, who
-            have been playing music together for several years.
+            county in southern England, in early 2020.
           </div>
         </Box>
 
