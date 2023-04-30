@@ -9,7 +9,7 @@ import Shipping from "./Shipping";
 import { loadStripe } from "@stripe/stripe-js";
 
 const stripePromise = loadStripe(
-  "pk_test_51LgU7yConHioZHhlAcZdfDAnV9643a7N1CMpxlKtzI1AUWLsRyrord79GYzZQ6m8RzVnVQaHsgbvN1qSpiDegoPi006QkO0Mlc"
+  "pk_test_51N1y44HCmvyyA19pC6CF3AJgAcc65svqBZTTPLRr1Bzh5KihxZVAB3E422qpL4luCg5yUYhWCjJMHPrdOwmakoua00gCJIR1CS"
 );
 
 const Checkout = () => {
