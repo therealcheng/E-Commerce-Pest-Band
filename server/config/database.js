@@ -90,3 +90,24 @@ module.exports = ({ env }) => {
     },
   };
 };
+
+const { parse } = require('pg-connection-string');
+
+module.exports = ({ env }) => {
+  const DATABASE_URL = env('DATABASE_URL');
+  const connection = parse(DATABASE_URL);
+
+  return {
+    connection: {
+      client: 'postgres',
+      connection: {
+        host: connection.host,
+        port: connection.port,
+        database: connection.database,
+        user: connection.user,
+        password: connection.password,
+        ssl: { rejectUnauthorized: false },
+      },
+    },
+  };
+};
