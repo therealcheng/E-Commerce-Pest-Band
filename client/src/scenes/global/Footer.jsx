@@ -58,7 +58,7 @@ const Footer = () => {
             Contact Us
           </Typography>
           <Typography mb="30px">
-            50 north Whatever Blvd, Washington, DC 10501
+            London / Hertfordshire, England, United Kingdom.
           </Typography>
           <Typography mb="30px" sx={{ wordWrap: "break-word" }}>
             Email: pestbandofficial@outlook.com

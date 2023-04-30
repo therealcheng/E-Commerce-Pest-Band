@@ -108,13 +108,13 @@ const ItemDetails = () => {
               ADD TO CART
             </Button>
           </Box>
-          <Box>
+          {/* <Box>
             <Box m="20px 0 5px 0" display="flex">
               <FavoriteBorderOutlinedIcon />
               <Typography sx={{ ml: "5px" }}>ADD TO WISHLIST</Typography>
             </Box>
             <Typography>CATEGORIES: {item?.attributes?.category}</Typography>
-          </Box>
+          </Box> */}
         </Box>
       </Box>
 
@@ -122,7 +122,7 @@ const ItemDetails = () => {
       <Box m="20px 0">
         <Tabs value={value} onChange={handleChange}>
           <Tab label="DESCRIPTION" value="description" />
-          <Tab label="REVIEWS" value="reviews" />
+          {/* <Tab label="REVIEWS" value="reviews" /> */}
         </Tabs>
       </Box>
       <Box display="flex" flexWrap="wrap" gap="15px">
